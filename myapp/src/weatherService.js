@@ -1,13 +1,13 @@
 import { IconBase } from "react-icons/lib";
 
-const API_KEY = '988391fdd87f02de3fbaf0fb204819af'
+const API_KEY = API_KEYNumber;
 
 const makeIconURL = (IconId) => `https://openweathermap.org/img/wn/
 ${IconId}@2x.png`
 
 const getFormattedWatherData = async(city, units = 'metric') =>{
 
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=${units}`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${City}&appid=${API_KEY}&units=${units}`
 
     const data = await fetch(URL)
     .then((res)=> res.json())
